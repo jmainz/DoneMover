@@ -1,3 +1,13 @@
+#!/usr/local/ruby
+=begin
+  Simple utility for fixing any "done()" issues that can crop up with a migration from QUnit 1.x to 2.x
+
+  Untested outside of simple examples, but it should work. Licensed under the "Revised BSD License" see LICENSE file.
+  
+
+  Usage: ruby DoneMover.rb </path/to/file> > </path/to/new/file> where > is the redirect operator of your shell
+=end
+
 if (ARGV.length != 1)
   puts "Usage: </path/to/file>: Moves the done's() or the equivalant to the appropriate place "
 else
